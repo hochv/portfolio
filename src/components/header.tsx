@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import "@styles/header.scss";
 import Image from "next/image";
 import logo from "@img/logo.png";
 import { FaBars } from "react-icons/fa";

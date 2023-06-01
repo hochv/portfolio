@@ -31,7 +31,7 @@ export const BackgroundCanvas: FC<IProps> = (props) => {
     window.addEventListener("mousemove", (evt) => {
       mouseCoordinate.x = evt.x;
       mouseCoordinate.y = evt.y;
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 2; i++) {
         circleArray.push(new Circle());
       }
     });
