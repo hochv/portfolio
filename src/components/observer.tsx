@@ -12,18 +12,21 @@ interface IProps {}
 export const ObserverClient: FC<IProps> = (props) => {
   useEffect(() => {
     if (!!window.IntersectionObserver) {
-      let observer = new IntersectionObserver((entries, observer) => {
-        // entries : Danh sách các đối tượng chúng ta theo dỏi
-        entries.forEach((entry) => {
-          // Kiểm tra ảnh của chúng ta có trong vùng nhìn thấy không
-          if (entry.isIntersecting) {
-            console.log("entry :", entry);
-            entry.target.classList.remove("hidden");
-          } else {
-            entry.target.classList.add("hidden");
-          }
-        });
-      }, {});
+      let observer = new IntersectionObserver(
+        (entries, observer) => {
+          // entries : Danh sách các đối tượng chúng ta theo dỏi
+          entries.forEach((entry) => {
+            // Kiểm tra ảnh của chúng ta có trong vùng nhìn thấy không
+            if (entry.isIntersecting) {
+              console.log("entry :", entry);
+              entry.target.classList.remove("hidden");
+            } else {
+              entry.target.classList.add("hidden");
+            }
+          });
+        },
+        { rootMargin: "40px 0px 0px 0px" }
+      );
       document.querySelectorAll(".hidden").forEach((el) => {
         observer.observe(el);
       });

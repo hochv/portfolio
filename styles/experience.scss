@@ -1,0 +1,94 @@
+.experience{
+    margin-top: 5rem;
+    position: relative;
+    .experience__content{
+        position: relative;
+        z-index: 10;
+    }
+    .bg{
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .heading{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .experience__grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+    .experience__box{
+        flex-basis: 49%;
+        margin-bottom: 1rem;
+        padding: 1.2rem;
+        border-radius: 16px;
+        border-top: 3px solid $border-color;
+        display: flex;align-items: center;justify-content: center;
+        opacity: .8;
+        background: linear-gradient(95.56deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+        .image{
+            margin-right: 1.5rem;
+            position: relative;
+            top: -5px;
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bottom{
+                position: absolute;
+                width: 100%;
+                height: 40px;
+                bottom: -13px;
+                background: linear-gradient(180deg, #2C1250 0%, #2C1250 19.79%, rgba(44, 18, 80, 0) 90.1%);
+                border-radius: 50%;
+                transform: matrix(-1, 0.05, -0.07, -1, 0, 0);
+            }
+        }
+        .data{
+            flex: 1;
+            .title{
+                font-size: 1.4rem;
+            }
+            .desc{
+                font-size: .8rem;
+                margin-bottom: .5rem;
+            }
+            .btn{
+                display: inline-flex;
+                min-width: 100px;
+                border: 2px solid $border-color;
+                align-items: center;
+                padding: 4px 16px;
+                align-items: center;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    @media (max-width:768px){
+        .experience__box{
+            flex-basis: 100%}
+    }
+}
+
+.bg-gradient-large {
+    flex-shrink: 0;
+    min-width: 40%;
+    width: 400px ;
+    max-height: 450px;
+    height: 50vw;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #763cac 0%,
+      rgba(50, 15, 133, 0) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
