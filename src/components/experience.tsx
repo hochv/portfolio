@@ -26,7 +26,7 @@ export const Experience: FC<IProps> = (props) => {
     },
     {
       title: "Mobile App",
-      desc: "React Native, Build code base, Attendance and mangage employee App, Best practise, ...",
+      desc: "React Native, Build code base, Attendance and mangage employee App, Best practice, ...",
       img: shape3,
     },
     {

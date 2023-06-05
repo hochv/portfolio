@@ -6,8 +6,8 @@ import { BackgroundCanvas } from "@/components/background";
 const font = Preahvihear({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hawk Porfolio",
-  description: "porfolio",
+  title: "Hawk Portfolio",
+  description: "portfolio",
 };
 
 export default function RootLayout({

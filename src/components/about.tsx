@@ -25,7 +25,7 @@ export const AboutMe: FC<IProps> = (props) => {
         </div>
         <div className="greeting__content">
           <p className="first__intruduce">
-            Hello! I Am <span className="theme-color name">Hoang Hawk</span>
+            Hello! I Am <span className="theme-color name">Hawk Hoang</span>
           </p>
           <p className="position">A Web Developer who</p>
           <p className="slogan">
