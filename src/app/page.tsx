@@ -1,6 +1,8 @@
 import { AboutMe } from "@/components/about";
+import { Contact } from "@/components/contact";
 import { Experience } from "@/components/experience";
 import { ObserverClient } from "@/components/observer";
+import { Projects } from "@/components/projects";
 import { Stack } from "@/components/stacks";
 
 export const metadata = {
@@ -15,6 +17,8 @@ export default function Home() {
       <AboutMe />
       <Experience />
       <Stack />
+      <Projects />
+      <Contact />
       <ObserverClient />
     </section>
   );
